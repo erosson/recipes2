@@ -1,8 +1,9 @@
 #!/usr/bin/env sh
 set -eu
-rm -rf dist
-mkdir dist
-for src in `find src -type f`; do
-    recipe-grid-lint $src
-    recipe-grid $src dist/`basename $src .md`.html
-done
+python src/main.py
+#rm -rf dist
+#mkdir dist
+#for src in `find src -type f`; do
+#    recipe-grid-lint $src
+#    recipe-grid $src dist/`basename $src .md`.html
+#done

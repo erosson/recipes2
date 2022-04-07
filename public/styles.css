@@ -1,0 +1,28 @@
+@media (prefers-color-scheme: dark) {
+    :root {
+        --normal-colour: white;
+        --inverted-fg-colour: black;
+        color: white;
+        background-color: black;
+    }
+
+    a {
+        color: cyan;
+    }
+
+    a:visited {
+        color: pink;
+    }
+}
+
+/*
+table.rg-table tr td.rg-sub-recipe-outputs ul li {
+    background-image: none;
+    background: red;
+}
+*/
+.rg-quantity-with-conversions ul.rg-quantity-conversions {
+    color: var(--normal-colour);
+    background-color: var(--inverted-fg-colour);
+    border-color: var(--normal-colour);
+}

@@ -1,4 +1,4 @@
 #!/usr/bin/env sh
 set -eu
 export SHELL=`which sh`
-concurrently 'chokidar src/* -c ./bin/build' 'python -m http.server --directory dist'
+concurrently 'chokidar src public recipes -c ./bin/build' 'python -m http.server --directory dist'
